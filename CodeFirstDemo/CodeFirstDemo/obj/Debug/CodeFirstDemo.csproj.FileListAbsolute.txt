@@ -1,0 +1,16 @@
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\bin\Debug\CodeFirstDemo.exe.config
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\bin\Debug\CodeFirstDemo.exe
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\bin\Debug\CodeFirstDemo.pdb
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\bin\Debug\EntityFramework.dll
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\bin\Debug\EntityFramework.xml
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\obj\Debug\CodeFirstDemo.csproj.AssemblyReference.cache
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\obj\Debug\CodeFirstDemo.csproj.SuggestedBindingRedirects.cache
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\obj\Debug\CodeFirstDemo.csproj.CoreCompileInputs.cache
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\obj\Debug\CodeFirstDemo.csproj.CopyComplete
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\obj\Debug\CodeFirstDemo.exe
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\obj\Debug\CodeFirstDemo.pdb
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\obj\Debug\CodeFirstDemo.Migrations.InitialSetup.resources
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\obj\Debug\CodeFirstDemo.csproj.GenerateResource.cache
+C:\Users\jpscott\Desktop\CodeFirstDemo\CodeFirstDemo\CodeFirstDemo\obj\Debug\CodeFirstDemo.Migrations.AddedComment.resources

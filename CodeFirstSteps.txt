@@ -1,0 +1,107 @@
+//	Gleaned from the following YouTube Video:
+//	Entity Framework 6 Tutorial: Learn Entity Framework 6 from Scratch
+//	https://www.youtube.com/watch?v=ZX7_12fwQLU
+
+0.	Create CodeFirst database using SQL Server Object Explorer.
+
+1.	Open Visual Studio. Create a new Console project
+	called CodeFirstDatabaseDemo.
+
+2.	We again must install EntityFramework. But, this time,
+	let's install it from the Package Manager Console (PM).
+
+	Tools / NuGet Package Manager / Package Manager Console.
+	From the command line, enter the following command:
+	install-package EntityFramework
+
+3.	In Visual Studio, create new Class Employee as:
+
+	public class Employee
+	{
+		public int EmployeeID 	{ get; set; }
+		public string FirstName { get; set; }
+		public string LastName  { get; set; }
+		public string Address   { get; set; }
+		public string City      { get; set; }
+		public string State     { get; set; }
+		public string Zip       { get; set; }
+		public string Phone     { get; set; }
+		public int DeptCode     { get; set; }
+		public double Salary    { get; set; }	
+	}
+	
+	//	Save the file as Employee.cs
+
+4.	In the program.cs file, above Main() add this:
+
+	public class EmployeeDbContext: DbContext
+	{
+		public DbSet<Employee> Employees { get; set; }
+	}
+
+5.	Next, we must specify the associated connection string:
+
+	In VS, open app.config file and add the following right
+	before the </configuration> at the end of the file:
+
+<connectionStrings>
+    <add name="EmployeeDbContext" connectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=CodeFirst;Integrated Security=SSPI;providerName=System.Data.SqlClient"/>
+</connectionStrings>
+
+6.	Tools / NuGet Package Manager / Package Manager Console.
+	From the command line, enter the following command:
+	Enable-Migrations
+
+	//	This must only be done once per project.
+
+7.	Every time we make a change to the code, we must
+	create a migration via:
+
+	Tools / NuGet Package Manager / Package Manager Console.
+	From the command line, enter the following command:
+	Add-Migration "NameShowingChangeMade"
+
+8.	Go to the Solution Explorer Migrations folder.
+	There are 2 files here:
+
+	//	Open this one
+	yyyymmdd_InitialSetup.cs
+
+	//	This is C# code
+	//	It has 2 methods:
+	//	Up(), which runs the migration/sets up the DB Schema, i.e., upgrades the DB.
+	//	Down(), which undoes the migration, i.e., downgrades the DB.
+
+9.	Every time we make a change to the code, we must:
+
+	Tools / NuGet Package Manager / Package Manager Console.
+	From the command line, enter the following command:
+	Add-Migration "ShowChangesInNameHere"	//	THEN RUN THIS:
+
+	//	To run the migration, from the PM run:
+	Update-Database
+
+10.	Go back to SMMS. Refresh the DB.
+
+	//	You Should See:
+	CodeFirst
+	
+	//	Under the tables, see:
+	dbo.Employee
+	
+11.	Open up the query window and add the three records:
+		INSERT INTO Employee (FirstName, LastName, Address,
+							  City, StateCode, Zip, Phone,
+							  DeptCode, Salary)
+		VALUES
+		("Jeff", "Scott", "751 Parr Rd.", "Wentzville", "MO", "63385", "(214) 386-3675", 1, 67890),
+		("Evan", "Gudmestad", "4431 Finney Ave.", "St Louis", "MO", "63113", "(214) 386-3991", 2, 78901),
+		("Charles", "Corrigan", "4431 Finney Ave.",  "St Louis", "MO", "63113", "(214) 386-4848", 3, 89012)
+
+12.	Verify that the three records were added.
+
+13.	You Want More?!? Go to this Article:
+
+Tutorial: Get Started with Entity Framework 6 Code First using MVC 5
+
+with this URL: https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application
